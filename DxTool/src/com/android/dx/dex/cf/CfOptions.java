@@ -46,5 +46,15 @@ public class CfOptions {
     public boolean statistics;
 
     /** where to issue warnings to */
-    public PrintStream warn = System.err;
+    public transient PrintStream warn = System.err;
+    
+    public String toString(){
+    	return "CfOptions:{positionInfo:" + positionInfo + 
+    			", localInfo:" + localInfo + 
+    			", strictNameCheck:" + strictNameCheck + 
+    			", optimize:" + optimize + 
+    			", dontOptimizeListFile:" + dontOptimizeListFile +
+    			", statistics:" + statistics + "}"
+    			;
+    }
 }

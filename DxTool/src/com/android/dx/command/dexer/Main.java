@@ -21,6 +21,7 @@ import com.android.dx.cf.code.SimException;
 import com.android.dx.cf.direct.ClassPathOpener;
 import com.android.dx.cf.iface.ParseException;
 import com.android.dx.command.DxConsole;
+import com.android.dx.command.LogHelper;
 import com.android.dx.command.UsageException;
 import com.android.dx.dex.DexFormat;
 import com.android.dx.dex.DexOptions;
@@ -40,6 +41,7 @@ import com.android.dx.rop.annotation.AnnotationsList;
 import com.android.dx.rop.cst.CstNat;
 import com.android.dx.rop.cst.CstString;
 import com.android.dx.util.FileUtils;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -168,6 +170,13 @@ public class Main {
      * @param argArray the command line arguments
      */
     public static void main(String[] argArray) throws IOException {
+        try {
+			LogHelper.dumpArgs("dexer.Main", argArray);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
         Arguments arguments = new Arguments();
         arguments.parse(argArray);
 
@@ -184,6 +193,10 @@ public class Main {
      */
     public static int run(Arguments arguments) throws IOException {
         // Reset the error/warning count to start fresh.
+		LogHelper.dumpArguments("dexer.Main", arguments);
+        
+        DxConsole.out.println("dexer.Main - run arguments......");
+        
         warnings = 0;
         errors = 0;
         // empty the list, so that  tools that load dx and keep it around

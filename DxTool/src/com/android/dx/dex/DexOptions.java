@@ -40,4 +40,11 @@ public class DexOptions {
     public boolean canUseExtendedOpcodes() {
         return targetApiLevel >= DexFormat.API_CURRENT;
     }
+    
+    public String toString(){
+    	return "DexOptions:{" + 
+    			"targetApiLevel:" + targetApiLevel + 
+    			"forceJumbo:" + forceJumbo + 
+    			"}";
+    }
 }

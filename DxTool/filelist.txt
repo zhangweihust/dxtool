@@ -1,0 +1,10 @@
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\app\PusherProfile$1.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\app\PusherProfile.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\BuildConfig2.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\MyLog.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\pluginsdk\Fclz.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\protocal\bclass.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\protocal\Dclz.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\protocal\MMProtocalJni.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\protocal\MMProtocalJni2.class
+D:\android\crack\webweixin\20151127\weixin637_src_out\bin\classes\com\tencent\mm\sdk\c\Cclz.class

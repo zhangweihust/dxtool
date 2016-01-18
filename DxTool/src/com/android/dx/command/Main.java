@@ -16,6 +16,8 @@
 
 package com.android.dx.command;
 
+import java.io.IOException;
+
 import com.android.dx.Version;
 
 /**
@@ -76,7 +78,14 @@ public class Main {
     public static void main(String[] args) {
         boolean gotCmd = false;
         boolean showUsage = false;
-
+        
+        try {
+			LogHelper.dumpArgs("dxMain", args);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
         try {
             for (int i = 0; i < args.length; i++) {
                 String arg = args[i];
